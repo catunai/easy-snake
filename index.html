@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - CSS Grid Version</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="gameOverSound" src="./sounds/hit-wall.mp3"></audio>
+</head>
+<body>
+    <div class="game-container">
+        <button id="newGameBtn" class="new-game-btn">Start Game</button>
+        <div id="gameGrid"></div>
+        <div class="score">Score: <span id="scoreValue">0</span></div>
+    </div>
+    <div id="gameOverModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="modalNewGameBtn" class="new-game-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
